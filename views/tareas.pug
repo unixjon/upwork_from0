@@ -1,0 +1,17 @@
+extends layout
+
+block contenido
+    .contenido-principal
+        h1= nombrePagina + ' - ' + project.name
+
+        // TODO Formulario aqui
+
+        // TODO Listado Pendientes aqui
+
+        //pre= vardump(project)
+        // Acciones
+        .contenedor-acciones
+            a(href=`/projects/edit/${project.id}` class="boton") Edit Project
+            button#Delete-Project(type="button" class="boton eliminar") Delete Project
+            
+
